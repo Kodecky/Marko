@@ -1,0 +1,28 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/base"; 
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/horizontal";
+@import "components/heading-box";
+@import "components/card";
+@import "components/button";
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/section";
+@import "layout/about";
+@import "layout/offer";
+@import "layout/contact";
+@import "layout/footer";
+
+@import "layout/header-gallery";
+@import "layout/section-gallery";
+@import "layout/gallery-layout";
+@import "layout/grid-gallery";
+
+@import "pages/home";
+@import "pages/gallery";
+

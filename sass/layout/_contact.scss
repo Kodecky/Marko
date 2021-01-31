@@ -1,0 +1,76 @@
+.contact-data{
+  text-align: left;
+  color: $color-white;
+  padding-left: 8rem;
+  position: relative;
+  z-index: 2;
+  
+  &__address{
+    margin-bottom: $margin-medium;
+    position: relative;
+
+    .fa-home{
+      @include contactIcon;
+    }
+
+    &--heading{
+      @include contactHeading;
+    }
+
+    &--content{
+      @include contactContent;
+    }
+  }
+
+  &__phone{
+    margin-bottom: $margin-medium;
+    position: relative;
+  
+    &--heading{
+      @include contactHeading;
+    }
+    
+    .fa-phone-square{
+      @include contactIcon;
+    }
+
+    &--content{
+      @include contactContent;
+      position: relative;
+      overflow: hidden;
+
+
+      &:hover{
+        color: $color-blue;
+      }
+    }
+
+  }
+
+  &__mail{
+    margin-bottom: $margin-big;
+    position: relative;
+
+    &--heading{
+      @include contactHeading;
+    }
+
+    .fa-envelope{
+      @include contactIcon;
+    }
+
+    &--content{
+      @include contactContent;
+
+      &:hover{
+        color: $color-blue;
+      }
+    }
+
+  }
+}
+
+.map-box{
+  position: relative;
+  z-index: 2;
+}

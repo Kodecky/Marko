@@ -1,0 +1,31 @@
+.btn{
+  font-size: 1.4rem;
+  // color: $color-black;
+  color: #fff;
+  // background-color: #fff;
+  background-color: $color-gallery-button;
+  text-decoration: none;
+  padding: 2px 20px;
+  border: 1px solid $color-gallery-button;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: all .2s ease;
+  box-shadow: 0 2px 2px .5px $color-lightgrey;
+
+  &:hover{
+    background-color: #fff;
+    // background-color: $color-gallery-button;
+    // color: #fff;
+    color: $color-black;
+  }
+
+  &:active{
+    transform: translate(-50%, 1.5px);
+    box-shadow: none;
+    // box-shadow: 0 .5px .3px .2px $color-lightgrey;
+    box-shadow: 0 0 0 0 $color-lightgrey;
+  }
+}

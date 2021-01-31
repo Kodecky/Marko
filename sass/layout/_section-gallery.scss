@@ -1,0 +1,22 @@
+.section-gallery{
+  width: 100%;
+  max-width: 144rem;
+  background-color: $color-black;
+  // background-image: $color-background;
+  padding: $padding-section;
+  // padding-top: 15rem;
+  padding-top: 13rem;
+  position: relative;
+
+  .title-big{
+    position: absolute;
+    // top: -14rem;
+    top: -15rem;
+    left: 15%;
+    font-size: 25rem;
+    font-weight: 900;
+    color: $color-horizontal;
+    opacity: .5;
+    z-index: 2;
+  }
+}

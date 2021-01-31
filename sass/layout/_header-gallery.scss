@@ -1,0 +1,132 @@
+.header-gallery{
+  width: 100%;
+  max-width: 144rem;
+  height: 10rem;
+  margin: 0 auto;
+
+  .navigation{
+    height: 10rem;
+    width: 100%;
+    // background-image: $color-background;
+    background-color: $color-black;
+    line-height: 10rem;
+
+    &__brand{
+      display: block;
+      float: left;
+      font-family: $font-brand;
+      font-size: 3rem;
+      color: $color-white;
+      font-weight: 900;
+      margin-left: 2rem;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(to right, darken($color-brown, 15%), $color-brown);
+      position: relative;
+      z-index: 3;
+    }
+
+    &__nav{
+      float: right;
+      margin-right: 2rem;
+      // height: 100%;
+
+      ul{
+        list-style-type: none;
+        // height: 100%;
+
+        li{
+          float: left;
+          display: block;
+          // height: 100%;
+          // display: flex;
+          // flex-direction: column;
+          // justify-content: center;
+
+          a{
+            display: inline-block;
+            font-size: 1.8rem;
+            padding: 0 1.2rem;
+            text-align: center;
+            text-decoration: none;
+            color: $color-white;
+            transition: all .2s;
+            position: relative;
+            overflow: hidden;
+
+            &:hover span::after{
+              left: 0;
+            }
+
+            span{
+
+              &::after{
+                @include hoverSubline;
+              }
+
+            }
+
+            
+
+            
+
+          }
+        }
+        
+      }
+    }
+  }
+
+  .hero{
+    width: 100%;
+    height: calc(90vh - 10rem);
+    // background-image: linear-gradient(to right top, rgba(0, 0, 0, .9), rgba(40, 40, 40, .8)), url(https://images.pexels.com/photos/5089154/pexels-photo-5089154.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-image: linear-gradient(to right top, rgba(0, 0, 0, .9), rgba(40, 40, 40, .9)), url(../img/schody-drewniane-Markodrew-98.jpg);
+    background-size: 100%;
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    position: relative;
+    // clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+
+    &__text-box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .heading-primary{
+        color: $color-white;
+        position: relative;
+        text-align: center;
+
+        &--above{
+          display: block;
+          font-size: 2.5rem;
+          // position: absolute;
+          // top: -2.5rem;
+          // left: 50%;
+          // transform: translateX(-50%);
+          transform: translateY(1.5rem);
+        }
+
+        &--main{
+          display: block;
+          font-size: 6rem;
+          font-family: $font-brand;
+        }
+
+        &--sub{
+          display: block;
+          font-size: 2.5rem;
+          // position: absolute;
+          // bottom: -3rem;
+          // left: 50%;
+          // transform: translateX(-50%);
+          transform: translateY(-1rem);
+        }
+      }
+    }
+  }
+
+}

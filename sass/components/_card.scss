@@ -1,0 +1,89 @@
+.card{
+  height: 30rem;
+  position: relative;
+  perspective: 200rem;
+  -moz-perspective: 200rem;
+
+  &__side{
+    height: 30rem;
+    transition: all 1s ease;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #111;
+    border-radius: 5px;
+
+    &--front{
+      background-color: #fff;
+    }
+   
+    &--back{
+      transform: rotateY(-180deg);
+      background-color: #fff;
+      // background-color: $color-card;
+      position: relative;
+      // z-index: 2;
+
+      .number{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 16rem;
+        transform: translate(-52%, -55%);
+        color: rgba(50, 50, 50, .2);
+        font-weight: bold;
+        // z-index: 1;
+      }
+
+      .material{
+        padding: 15px;
+
+        &__title{
+          display: block;
+          text-align: left;
+          border-bottom: 1px solid $color-horizontal;
+          font-size: 1.4rem;
+          color: $color-lightgrey;
+        }
+
+        &__description{
+          display: block;
+          text-align: left;
+          font-size: 1.4rem;
+          color: $color-black;
+        }
+      }
+
+      .additions{
+        color: $color-white;
+        padding: 15px;
+
+        &__title{
+          @extend .material__title;
+        }
+
+        &__description{
+          @extend .material__description;
+        }
+      }
+
+      .fa-check{
+        // color: orangered;
+        color: $color-lightgrey;
+        font-size: 1.4rem;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  &:hover .card__side--front{
+    transform: rotateY(180deg);
+    cursor: pointer;
+  }
+
+  &:hover .card__side--back{
+    transform: rotateY(0);
+  }
+}
