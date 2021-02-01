@@ -703,49 +703,49 @@ body {
 }
 
 .section-gallery .row .picture-1 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-100.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-100.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .section-gallery .row .picture-2 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-86.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-86.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .section-gallery .row .picture-3 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-83.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-83.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .section-gallery .row .picture-4 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-93.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-93.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .section-gallery .row .picture-5 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-103.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-103.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .section-gallery .row .picture-6 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-109.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-109.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .section-gallery .row .picture-7 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-117.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-117.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .section-gallery .row .picture-8 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-124.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-124.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -757,25 +757,25 @@ body {
 }
 
 .section-gallery .row .picture-10 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-6.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-6.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .section-gallery .row .picture-11 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-16.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-16.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .section-gallery .row .picture-12 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-20.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-20.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .section-gallery .row .picture-13 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-22.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-22.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -787,31 +787,31 @@ body {
 }
 
 .section-gallery .row .picture-15 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-40.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-40.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .section-gallery .row .picture-16 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-46.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-46.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .section-gallery .row .picture-17 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-54.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-54.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .section-gallery .row .picture-18 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-58.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-58.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .section-gallery .row .picture-19 {
-  background-image: url(../../img/schody-Markodrew/schody-drewniane-Markodrew-66.jpg);
+  background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-66.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -836,31 +836,31 @@ body {
 }
 
 .row-gallery [class^="col-"]:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 .row-gallery .col-1-of-2 {
-  width: calc((100% - 1rem) / 2);
+  width: calc((100% - 1.5rem) / 2);
 }
 
 .row-gallery .col-1-of-3 {
-  width: calc((100% - 2 * 1rem) / 3);
+  width: calc((100% - 2 * 1.5rem) / 3);
 }
 
 .row-gallery .col-2-of-3 {
-  width: calc(2 * ((100% - 2 * 1rem) / 3) + 1rem);
+  width: calc(2 * ((100% - 2 * 1.5rem) / 3) + 1.5rem);
 }
 
 .row-gallery .col-1-of-4 {
-  width: calc((100% - 3 * 1rem) / 4);
+  width: calc((100% - 3 * 1.5rem) / 4);
 }
 
 .row-gallery .col-2-of-4 {
-  width: calc(2 * ((100% - 3 * 1rem) / 4) + 1rem);
+  width: calc(2 * ((100% - 3 * 1.5rem) / 4) + 1.5rem);
 }
 
 .row-gallery .col-3-of-4 {
-  width: calc(3 * ((100% - 3 * 1rem) / 4) + 2 * 1rem);
+  width: calc(3 * ((100% - 3 * 1.5rem) / 4) + 2 * 1.5rem);
 }
 
 .home {
