@@ -30,10 +30,10 @@
       
       <nav class="navigation__nav">
         <ul>
-          <li><a href="#"><span>O nas</span></a></li>
-          <li><a href="gallery.html"><span>Galeria</span></a></li>
-          <li><a href="#"><span>Oferta</span></a></li>
-          <li><a href="#"><span>Kontakt</span></a></li>
+          <li><a href="#about"><span class="about-nav-link">O nas</span></a></li>
+          <li><a href="gallery.html"><span class="gallery-nav-link">Galeria</span></a></li>
+          <li><a href="#offer"><span class="offer-nav-link">Oferta</span></a></li>
+          <li><a href="#contact"><span class="contact-nav-link">Kontakt</span></a></li>
         </ul>
       </nav>
     
@@ -51,13 +51,13 @@
 
   </header>
 
+  <div class="horizontal-line-container">
+    <div class="horizontal-line"></div>
+  </div>
+
   <main class="main">
 
-    <section class="section section-about">
-
-      <div class="horizontal-line-container">
-        <div class="horizontal-line"></div>
-      </div>
+    <section class="section section-about" id="about">
 
       <div class="heading-box">
         <h2 class="heading-secondary u-margin-bottom-big">
@@ -76,11 +76,11 @@
 
     </section>
 
-    <section class="section section-offer">
+    <div class="horizontal-line-container">
+      <div class="horizontal-line"></div>
+    </div>
 
-      <div class="horizontal-line-container">
-        <div class="horizontal-line"></div>
-      </div>
+    <section class="section section-offer" id="offer">
 
       <div class="heading-box">
         <h2 class="heading-secondary u-margin-bottom-big">
@@ -100,12 +100,12 @@
       </div>
 
     </section>
+      
+    <div class="horizontal-line-container">
+      <div class="horizontal-line"></div>
+    </div>
 
-    <section class="section section-contact">
-
-      <div class="horizontal-line-container">
-        <div class="horizontal-line"></div>
-      </div>
+    <section class="section section-contact" id="contact">
 
       <div class="heading-box">
         <h2 class="heading-secondary u-margin-bottom-big">
@@ -166,5 +166,6 @@
     </div>  
 
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
