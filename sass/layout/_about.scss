@@ -1,0 +1,18 @@
+.section-about{
+
+  .heading-box{
+    opacity: 0;
+    transition: all 1s ease;
+    transform: translateY(60px);
+  }
+
+  .text-box{
+    @extend .heading-box;
+  }
+
+  .show{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

@@ -16,10 +16,11 @@
       display: block;
       float: left;
       font-family: $font-brand;
-      font-size: 3rem;
+      // font-size: 3rem;
+      font-size: 4rem;
       color: $color-white;
       font-weight: 900;
-      margin-left: 2rem;
+      margin-left: 5rem;
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
@@ -29,7 +30,7 @@
 
     &__nav{
       float: right;
-      margin-right: 2rem;
+      margin-right: 5rem;
       // height: 100%;
 
       ul{
