@@ -2,8 +2,19 @@
 
   .heading-box{
     opacity: 0;
-    transition: all 1s ease;
-    transform: translateY(60px);
+    transition: all .8s ease;
+    transform: translateY(70px);
+
+    .title-big{
+      transform: scale(.85);
+      opacity: 0;
+      transition: .8s;
+    }
+
+    .show-title-big{
+      transform: scale(1);
+      opacity: .5;
+    }
   }
 
   .text-box{
