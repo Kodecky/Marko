@@ -6,7 +6,7 @@ const aboutHeader = document.querySelector(".section-about .heading-box");
 const aboutText = document.querySelector(".section-about .text-box");
 const aboutTitle = document.querySelector(".section-about .title-big");
 const offerHeader = document.querySelector(".section-offer .heading-box");
-const offerText = document.querySelector(".section-offer .text-box");
+const offerCards = document.querySelector(".section-offer .cards-box");
 const offerTitle = document.querySelector(".section-offer .title-big");
 
 window.addEventListener("scroll", function() {
@@ -20,7 +20,7 @@ window.addEventListener("scroll", function() {
 window.addEventListener("scroll", function() {
   if (window.pageYOffset >  checkpointSecond.offsetTop) {
     offerHeader.classList.add("show");
-    offerText.classList.add("show");
+    offerCards.classList.add("show");
     offerTitle.classList.add("show-title-big");
   }
 })

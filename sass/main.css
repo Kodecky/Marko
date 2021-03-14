@@ -223,6 +223,49 @@ body {
           box-shadow: 0 0 0 0 #8a8a8a;
 }
 
+.cards-box {
+  background-color: #1c1d1f;
+  width: 80rem;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+}
+
+.cards-box .card-offer {
+  height: 30rem;
+  width: 20rem;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 8px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: #1c1d1f;
+}
+
+.cards-box .card-offer:not(:first-child) {
+  margin-left: 3rem;
+}
+
+.cards-box .card-offer:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.cards-box .card-offer--title {
+  font-size: 1.8rem;
+  color: #f0f0f0;
+  margin-top: 20px;
+}
+
+.cards-box .show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
