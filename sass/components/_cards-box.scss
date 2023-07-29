@@ -1,13 +1,21 @@
 .cards-box{
   background-color: $color-black;
-  width: 80rem;
+  max-width: 80rem;
   text-align: center;
   opacity: 0;
   transition: all .8s ease;
   transform: translateY(70px);
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  margin: auto;
+
+  @media screen and (max-width: 770px) {
+    flex-direction: column;
+    align-items: center;
+    &:not(:first-child){
+      margin-top: 20px;
+    }
+  }
 
   .card-offer{
     height: 30rem;
@@ -18,7 +26,11 @@
     transition: .3s;
     background-color: $color-black;
     
-
+    @media screen and (max-width: 770px) {
+      &:not(:first-child){
+        margin-top: 40px;
+      }
+    }
     // &:not(:first-child){
     //   margin-left: 3rem;
     // }

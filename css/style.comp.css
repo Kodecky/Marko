@@ -74,23 +74,6 @@ body {
     color: #333436;
     opacity: .5;
     z-index: 2; }
-    @media screen and (max-width: 1024px) {
-      .heading-box .title-big, .section-about .text-box .title-big, .section-offer .text-box .title-big {
-        font-size: 200px; } }
-    @media screen and (max-width: 890px) {
-      .heading-box .title-big, .section-about .text-box .title-big, .section-offer .text-box .title-big {
-        font-size: 160px;
-        top: -5rem; } }
-    @media screen and (max-width: 700px) {
-      .heading-box .title-big, .section-about .text-box .title-big, .section-offer .text-box .title-big {
-        font-size: 100px;
-        left: 2%;
-        top: -1rem; } }
-    @media screen and (max-width: 700px) {
-      .heading-box .title-big, .section-about .text-box .title-big, .section-offer .text-box .title-big {
-        font-size: 60px;
-        left: 2%;
-        top: -1rem; } }
 
 .text-box .paragraph {
   font-size: 1.6rem;
@@ -176,20 +159,13 @@ body {
 
 .cards-box {
   background-color: #1c1d1f;
-  max-width: 80rem;
+  width: 80rem;
   text-align: center;
   opacity: 0;
   transition: all .8s ease;
   transform: translateY(70px);
-  display: flex;
-  justify-content: space-between;
-  margin: auto; }
-  @media screen and (max-width: 770px) {
-    .cards-box {
-      flex-direction: column;
-      align-items: center; }
-      .cards-box:not(:first-child) {
-        margin-top: 20px; } }
+  display: inline-flex;
+  justify-content: space-between; }
   .cards-box .card-offer {
     height: 30rem;
     width: 20rem;
@@ -198,9 +174,6 @@ body {
     border-radius: 8px;
     transition: .3s;
     background-color: #1c1d1f; }
-    @media screen and (max-width: 770px) {
-      .cards-box .card-offer:not(:first-child) {
-        margin-top: 40px; } }
     .cards-box .card-offer:hover {
       transform: translateY(-8px); }
     .cards-box .card-offer--title {
@@ -303,12 +276,6 @@ body {
           font-size: 3rem;
           transform: translateY(1.5rem);
           letter-spacing: .5px; }
-          @media screen and (max-width: 1024px) {
-            .header .hero__text-box .heading-primary--above {
-              font-size: 30px; } }
-          @media screen and (max-width: 660px) {
-            .header .hero__text-box .heading-primary--above {
-              font-size: 20px; } }
         .header .hero__text-box .heading-primary--main {
           display: block;
           font-size: 7rem;
@@ -317,23 +284,11 @@ body {
           -webkit-background-clip: text;
           color: transparent;
           color: #f0f0f0; }
-          @media screen and (max-width: 1024px) {
-            .header .hero__text-box .heading-primary--main {
-              font-size: 40px; } }
-          @media screen and (max-width: 660px) {
-            .header .hero__text-box .heading-primary--main {
-              font-size: 30px; } }
         .header .hero__text-box .heading-primary--sub {
           display: block;
           font-size: 3rem;
           transform: translateY(-1rem);
           letter-spacing: .5px; }
-          @media screen and (max-width: 1024px) {
-            .header .hero__text-box .heading-primary--sub {
-              font-size: 30px; } }
-          @media screen and (max-width: 660px) {
-            .header .hero__text-box .heading-primary--sub {
-              font-size: 20px; } }
 
 .section {
   width: 100%;
@@ -352,22 +307,6 @@ body {
     transform: scale(0.85);
     opacity: 0;
     transition: .8s; }
-    @media screen and (max-width: 1024px) {
-      .section-about .heading-box .title-big, .section-about .text-box .title-big {
-        font-size: 200px; } }
-    @media screen and (max-width: 890px) {
-      .section-about .heading-box .title-big, .section-about .text-box .title-big {
-        font-size: 160px;
-        top: -5rem; } }
-    @media screen and (max-width: 700px) {
-      .section-about .heading-box .title-big, .section-about .text-box .title-big {
-        font-size: 100px;
-        top: -1rem; } }
-    @media screen and (max-width: 700px) {
-      .section-about .heading-box .title-big, .section-about .text-box .title-big {
-        font-size: 60px;
-        left: 2%;
-        top: -1rem; } }
   .section-about .heading-box .show-title-big, .section-about .text-box .show-title-big {
     transform: scale(1);
     opacity: .5; }
@@ -384,23 +323,6 @@ body {
     transform: scale(0.85);
     opacity: 0;
     transition: .8s; }
-    @media screen and (max-width: 1024px) {
-      .section-offer .heading-box .title-big, .section-offer .text-box .title-big {
-        font-size: 200px; } }
-    @media screen and (max-width: 890px) {
-      .section-offer .heading-box .title-big, .section-offer .text-box .title-big {
-        font-size: 160px;
-        top: -5rem; } }
-    @media screen and (max-width: 700px) {
-      .section-offer .heading-box .title-big, .section-offer .text-box .title-big {
-        font-size: 100px;
-        left: 2%;
-        top: -1rem; } }
-    @media screen and (max-width: 700px) {
-      .section-offer .heading-box .title-big, .section-offer .text-box .title-big {
-        font-size: 60px;
-        left: 2%;
-        top: -1rem; } }
   .section-offer .heading-box .show-title-big, .section-offer .text-box .show-title-big {
     transform: scale(1);
     opacity: .5; }
@@ -623,17 +545,6 @@ body {
     color: #333436;
     opacity: .5;
     z-index: 2; }
-    @media screen and (max-width: 1024px) {
-      .section-gallery .title-big {
-        font-size: 200px; } }
-    @media screen and (max-width: 890px) {
-      .section-gallery .title-big {
-        font-size: 160px; } }
-    @media screen and (max-width: 700px) {
-      .section-gallery .title-big {
-        font-size: 130px;
-        top: -10rem;
-        left: 7%; } }
 
 .section-gallery .row {
   position: relative;
