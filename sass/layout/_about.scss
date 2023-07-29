@@ -9,6 +9,22 @@
       transform: scale(.85);
       opacity: 0;
       transition: .8s;
+      @media screen and (max-width: 1024px) {
+        font-size: 200px;
+      }
+      @media screen and (max-width: 890px) {
+        font-size: 160px;
+        top: -5rem;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: 100px;
+        top: -1rem;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: 60px;
+        left: 2%;
+        top: -1rem;
+      }
     }
 
     .show-title-big{

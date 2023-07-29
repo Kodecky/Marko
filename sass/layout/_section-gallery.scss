@@ -19,5 +19,16 @@
     color: $color-horizontal;
     opacity: .5;
     z-index: 2;
+    @media screen and (max-width: 1024px) {
+      font-size: 200px;
+    }
+    @media screen and (max-width: 890px) {
+      font-size: 160px;
+    }
+    @media screen and (max-width: 700px) {
+      font-size: 130px;
+      top: -10rem;
+      left: 7%;
+    }
   }
 }
