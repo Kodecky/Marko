@@ -1,0 +1,21 @@
+.vertical-line-container{
+  width: 100%;
+  max-width: 1440px;
+  height: 35rem;
+  padding-top: 5rem;
+  margin: 0 auto;
+  // padding-bottom: 3rem;
+  background-color: $color-black;
+
+  .vertical-line{
+    width: 50%;
+    height: 1px;
+    border-right: .1rem dotted $color-dark-grey;
+    transition: all .8s ease;
+
+    &.active{
+      height: 100%;
+    }
+  }
+
+}

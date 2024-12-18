@@ -34,6 +34,25 @@
     // &:not(:first-child){
     //   margin-left: 3rem;
     // }
+    &--first{
+      background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-100.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    &--second{
+      background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-6.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    &--third{
+      background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-86.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    &--title{
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
 
     &:hover{
       transform: translateY(-8px);

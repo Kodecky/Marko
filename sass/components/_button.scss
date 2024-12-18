@@ -29,3 +29,44 @@
     box-shadow: 0 0 0 0 $color-lightgrey;
   }
 }
+
+.go-up-btn{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  bottom: 5rem;
+  right: 5rem;
+  background-color: #fff;
+  color: $color-gallery-button;
+  // padding: 1rem 2rem;
+  border-radius: 50%;
+  font-size: 3rem;
+  // box-shadow: 0 2px 2px .5px $color-lightgrey;
+  transition: all .3s ease;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+
+  &.show{
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &:hover{
+    background-color: $color-gallery-button;
+    color: #fff;
+
+    &__link{
+      color: #fff;
+    }
+  }
+
+  &:active{
+    transform: translate(0, 1.5px);
+    box-shadow: none;
+  }
+
+}
