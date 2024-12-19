@@ -6,7 +6,7 @@
   transition: all .8s ease;
   transform: translateY(70px);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: auto;
 
   @media screen and (max-width: 770px) {
@@ -25,6 +25,8 @@
     border-radius: 8px;
     transition: .3s;
     background-color: $color-black;
+    position: relative;
+    cursor: pointer;
     
     @media screen and (max-width: 770px) {
       &:not(:first-child){
@@ -54,15 +56,44 @@
       font-weight: 300;
     }
 
+    a{
+      display: block;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+
+      .card-offer--title{
+        font-size: 3rem;
+        color: $color-white;
+        margin-top: 20px;
+        font-weight: 400;
+        z-index: 2;
+      }
+    }
+
+    .overlay{
+      background-color: rgba(0, 0, 0, .5);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 8px;
+      pointer-events: none;
+      transition: .3s;
+    }
+
+
     &:hover{
       transform: translateY(-8px);
       // cursor: pointer;
-    }
 
-    &--title{
-      font-size: 1.8rem;
-      color: $color-white;
-      margin-top: 20px;
+      .overlay{
+        background-color: rgba(0, 0, 0, .3);
+      }
     }
   }
 

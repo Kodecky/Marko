@@ -1,6 +1,6 @@
 .header{
   width: 100%;
-  max-width: 144rem;
+  max-width: 1920px;
   height: 100vh;
   margin: 0 auto;
   position: relative;
@@ -68,7 +68,7 @@
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(to right top, rgba(0, 0, 0, .9), rgba(40, 40, 40, .9)), url(../img/schody-drewniane-Markodrew-98.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-position: center 70%;
     background-repeat: no-repeat;
     position: relative;

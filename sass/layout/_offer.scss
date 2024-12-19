@@ -4,6 +4,9 @@
     opacity: 0;
     transition: all .8s ease;
     transform: translateY(70px);
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
 
     .title-big{
       transform: scale(.85);
@@ -18,14 +21,10 @@
         top: -5rem;
       }
       @media screen and (max-width: 700px) {
-        font-size: 100px;
+        font-size: 140px;
         left: 2%;
         top: -1rem;
-      }
-      @media screen and (max-width: 700px) {
-        font-size: 60px;
-        left: 2%;
-        top: -1rem;
+        white-space: nowrap;
       }
     }
 

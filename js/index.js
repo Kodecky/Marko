@@ -33,6 +33,7 @@ window.addEventListener("scroll", function() {
 
 const verticalsContainers = document.querySelectorAll(".vertical-line-container");
 const sections = document.querySelectorAll(".section");
+console.log(sections);
 window.addEventListener("scroll", function() {
   verticalsContainers.forEach(container => {
     let line = container.querySelector(".vertical-line");

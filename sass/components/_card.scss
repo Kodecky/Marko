@@ -1,11 +1,11 @@
 .card{
-  height: 30rem;
+  height: 350px;
   position: relative;
   perspective: 200rem;
   -moz-perspective: 200rem;
 
   &__side{
-    height: 30rem;
+    height: 350px;
     transition: all 1s ease;
     backface-visibility: hidden;
     position: absolute;

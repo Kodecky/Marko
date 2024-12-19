@@ -1,76 +1,139 @@
-.contact-data{
-  text-align: left;
-  color: $color-white;
-  padding-left: 8rem;
-  position: relative;
-  z-index: 2;
-  
-  &__address{
-    margin-bottom: $margin-medium;
-    position: relative;
+.section-contact{
+  .heading-box{
+    opacity: 0;
+    transition: all .8s ease;
+    transform: translateY(70px);
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
 
-    .fa-home{
-      @include contactIcon;
+    .title-big{
+      transform: scale(.85);
+      opacity: 0;
+      transition: .8s;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 200px;
+      }
+      @media screen and (max-width: 890px) {
+        font-size: 160px;
+        top: -5rem;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: 140px;
+        left: 2%;
+        top: -1rem;
+        white-space: nowrap;
+      }
     }
 
-    &--heading{
-      @include contactHeading;
-    }
-
-    &--content{
-      @include contactContent;
+    .show-title-big{
+      transform: scale(1);
+      opacity: .5;
     }
   }
-
-  &__phone{
-    margin-bottom: $margin-medium;
-    position: relative;
+  .show{
+    opacity: 1;
+    transform: translateY(0);
+  }
   
-    &--heading{
-      @include contactHeading;
+  .contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (min-width: 756px){
+      flex-direction: row;
+    }
+
+    .contact-data{
+      text-align: left;
+      color: $color-white;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 2;
+
+      @media screen and (max-width: 756px){
+        margin-left: 0;
+      }
+      
+      &__address{
+        margin-bottom: $margin-medium;
+        position: relative;
+    
+        .fa-home{
+          @include contactIcon;
+        }
+    
+        &--heading{
+          @include contactHeading;
+        }
+    
+        &--content{
+          @include contactContent;
+        }
+      }
+    
+      &__phone{
+        margin-bottom: $margin-medium;
+        position: relative;
+      
+        &--heading{
+          @include contactHeading;
+        }
+        
+        .fa-phone-square{
+          @include contactIcon;
+        }
+    
+        &--content{
+          @include contactContent;
+          position: relative;
+          overflow: hidden;
+    
+    
+          &:hover{
+            color: $color-blue;
+          }
+        }
+    
+      }
+    
+      &__mail{
+        margin-bottom: $margin-big;
+        position: relative;
+    
+        &--heading{
+          @include contactHeading;
+        }
+    
+        .fa-envelope{
+          @include contactIcon;
+        }
+    
+        &--content{
+          @include contactContent;
+    
+          &:hover{
+            color: $color-blue;
+          }
+        }
+    
+      }
     }
     
-    .fa-phone-square{
-      @include contactIcon;
-    }
-
-    &--content{
-      @include contactContent;
+    .map-box{
       position: relative;
-      overflow: hidden;
+      z-index: 2;
+      width: 50%;
 
-
-      &:hover{
-        color: $color-blue;
+      @media screen and (max-width: 756px){
+        width: 100%;
+        
       }
     }
-
   }
-
-  &__mail{
-    margin-bottom: $margin-big;
-    position: relative;
-
-    &--heading{
-      @include contactHeading;
-    }
-
-    .fa-envelope{
-      @include contactIcon;
-    }
-
-    &--content{
-      @include contactContent;
-
-      &:hover{
-        color: $color-blue;
-      }
-    }
-
-  }
-}
-
-.map-box{
-  position: relative;
-  z-index: 2;
 }

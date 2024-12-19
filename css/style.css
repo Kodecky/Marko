@@ -19,7 +19,7 @@ body {
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
-  padding: 3rem;
+  background: #000;
 }
 
 .u-center-text {
@@ -48,7 +48,7 @@ body {
 
 .vertical-line-container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1920px;
   height: 35rem;
   padding-top: 5rem;
   margin: 0 auto;
@@ -108,33 +108,27 @@ body {
 }
 @media screen and (max-width: 700px) {
   .heading-box .title-big, .section-offer .text-box .title-big, .section-about .text-box .title-big {
-    font-size: 100px;
+    font-size: 140px;
     left: 2%;
     top: -1rem;
-  }
-}
-@media screen and (max-width: 700px) {
-  .heading-box .title-big, .section-offer .text-box .title-big, .section-about .text-box .title-big {
-    font-size: 60px;
-    left: 2%;
-    top: -1rem;
+    white-space: nowrap;
   }
 }
 
 .text-box .paragraph {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #f0f0f0;
   text-align: center;
 }
 
 .card {
-  height: 30rem;
+  height: 350px;
   position: relative;
   perspective: 200rem;
   -moz-perspective: 200rem;
 }
 .card__side {
-  height: 30rem;
+  height: 350px;
   transition: all 1s ease;
   backface-visibility: hidden;
   position: absolute;
@@ -226,8 +220,8 @@ body {
   align-items: center;
   width: 6rem;
   height: 6rem;
-  bottom: 5rem;
-  right: 5rem;
+  bottom: 8rem;
+  right: 3rem;
   background-color: #fff;
   color: #e67e22;
   border-radius: 50%;
@@ -261,7 +255,7 @@ body {
   transition: all 0.8s ease;
   transform: translateY(70px);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: auto;
 }
 @media screen and (max-width: 770px) {
@@ -281,6 +275,8 @@ body {
   border-radius: 8px;
   transition: 0.3s;
   background-color: rgb(28, 29, 31);
+  position: relative;
+  cursor: pointer;
 }
 @media screen and (max-width: 770px) {
   .cards-box .card-offer:not(:first-child) {
@@ -306,13 +302,38 @@ body {
   font-size: 2.5rem;
   font-weight: 300;
 }
+.cards-box .card-offer a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.cards-box .card-offer a .card-offer--title {
+  font-size: 3rem;
+  color: #f0f0f0;
+  margin-top: 20px;
+  font-weight: 400;
+  z-index: 2;
+}
+.cards-box .card-offer .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  pointer-events: none;
+  transition: 0.3s;
+}
 .cards-box .card-offer:hover {
   transform: translateY(-8px);
 }
-.cards-box .card-offer--title {
-  font-size: 1.8rem;
-  color: #f0f0f0;
-  margin-top: 20px;
+.cards-box .card-offer:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .cards-box .show {
   opacity: 1;
@@ -358,7 +379,7 @@ body {
 
 .header {
   width: 100%;
-  max-width: 144rem;
+  max-width: 1920px;
   height: 100vh;
   margin: 0 auto;
   position: relative;
@@ -412,7 +433,7 @@ body {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.9), rgba(40, 40, 40, 0.9)), url(../img/schody-drewniane-Markodrew-98.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-position: center 70%;
   background-repeat: no-repeat;
   position: relative;
@@ -482,7 +503,7 @@ body {
 
 .section {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1920px;
   background-color: rgb(28, 29, 31);
   padding: 0 40px;
   padding-top: 3rem;
@@ -490,43 +511,30 @@ body {
   margin: 0 auto;
 }
 
+.section-about {
+  overflow: hidden;
+}
 .section-about .heading-box, .section-about .text-box {
   opacity: 0;
   transition: all 0.8s ease;
   transform: translateY(70px);
-}
-.section-about .heading-box .title-big, .section-about .text-box .title-big {
-  transform: scale(0.85);
-  opacity: 0;
-  transition: 0.8s;
-}
-@media screen and (max-width: 1024px) {
-  .section-about .heading-box .title-big, .section-about .text-box .title-big {
-    font-size: 200px;
-  }
-}
-@media screen and (max-width: 890px) {
-  .section-about .heading-box .title-big, .section-about .text-box .title-big {
-    font-size: 160px;
-    top: -5rem;
-  }
-}
-@media screen and (max-width: 700px) {
-  .section-about .heading-box .title-big, .section-about .text-box .title-big {
-    font-size: 100px;
-    top: -1rem;
-  }
-}
-@media screen and (max-width: 700px) {
-  .section-about .heading-box .title-big, .section-about .text-box .title-big {
-    font-size: 60px;
-    left: 2%;
-    top: -1rem;
-  }
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .section-about .heading-box .show-title-big, .section-about .text-box .show-title-big {
   transform: scale(1);
   opacity: 0.5;
+}
+.section-about .text-box {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+@media screen and (max-width: 600px) {
+  .section-about .text-box {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .section-about .show {
   opacity: 1;
@@ -537,6 +545,9 @@ body {
   opacity: 0;
   transition: all 0.8s ease;
   transform: translateY(70px);
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .section-offer .heading-box .title-big, .section-offer .text-box .title-big {
   transform: scale(0.85);
@@ -556,16 +567,10 @@ body {
 }
 @media screen and (max-width: 700px) {
   .section-offer .heading-box .title-big, .section-offer .text-box .title-big {
-    font-size: 100px;
+    font-size: 140px;
     left: 2%;
     top: -1rem;
-  }
-}
-@media screen and (max-width: 700px) {
-  .section-offer .heading-box .title-big, .section-offer .text-box .title-big {
-    font-size: 60px;
-    left: 2%;
-    top: -1rem;
+    white-space: nowrap;
   }
 }
 .section-offer .heading-box .show-title-big, .section-offer .text-box .show-title-big {
@@ -577,25 +582,83 @@ body {
   transform: translateY(0);
 }
 
-.contact-data {
+.section-contact .heading-box, .section-contact .section-about .text-box, .section-about .section-contact .text-box, .section-contact .section-offer .text-box, .section-offer .section-contact .text-box {
+  opacity: 0;
+  transition: all 0.8s ease;
+  transform: translateY(70px);
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section-contact .heading-box .title-big, .section-contact .section-about .text-box .title-big, .section-about .section-contact .text-box .title-big, .section-contact .section-offer .text-box .title-big, .section-offer .section-contact .text-box .title-big {
+  transform: scale(0.85);
+  opacity: 0;
+  transition: 0.8s;
+}
+@media screen and (max-width: 1024px) {
+  .section-contact .heading-box .title-big, .section-contact .section-about .text-box .title-big, .section-about .section-contact .text-box .title-big, .section-contact .section-offer .text-box .title-big, .section-offer .section-contact .text-box .title-big {
+    font-size: 200px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .section-contact .heading-box .title-big, .section-contact .section-about .text-box .title-big, .section-about .section-contact .text-box .title-big, .section-contact .section-offer .text-box .title-big, .section-offer .section-contact .text-box .title-big {
+    font-size: 160px;
+    top: -5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .section-contact .heading-box .title-big, .section-contact .section-about .text-box .title-big, .section-about .section-contact .text-box .title-big, .section-contact .section-offer .text-box .title-big, .section-offer .section-contact .text-box .title-big {
+    font-size: 140px;
+    left: 2%;
+    top: -1rem;
+    white-space: nowrap;
+  }
+}
+.section-contact .heading-box .show-title-big, .section-contact .section-about .text-box .show-title-big, .section-about .section-contact .text-box .show-title-big, .section-contact .section-offer .text-box .show-title-big, .section-offer .section-contact .text-box .show-title-big {
+  transform: scale(1);
+  opacity: 0.5;
+}
+.section-contact .show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.section-contact .contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 756px) {
+  .section-contact .contact-wrapper {
+    flex-direction: row;
+  }
+}
+.section-contact .contact-wrapper .contact-data {
   text-align: left;
   color: #f0f0f0;
-  padding-left: 8rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 2;
 }
-.contact-data__address {
+@media screen and (max-width: 756px) {
+  .section-contact .contact-wrapper .contact-data {
+    margin-left: 0;
+  }
+}
+.section-contact .contact-wrapper .contact-data__address {
   margin-bottom: 4rem;
   position: relative;
 }
-.contact-data__address .fa-home {
+.section-contact .contact-wrapper .contact-data__address .fa-home {
   position: absolute;
   top: 50px;
   left: 10px;
   font-size: 1.4rem;
   color: #8a8a8a;
 }
-.contact-data__address--heading {
+.section-contact .contact-wrapper .contact-data__address--heading {
   display: block;
   width: 80%;
   font-size: 2.5rem;
@@ -603,7 +666,7 @@ body {
   color: #8a8a8a;
   border-bottom: 1px solid #8a8a8a;
 }
-.contact-data__address--content {
+.section-contact .contact-wrapper .contact-data__address--content {
   display: block;
   font-size: 1.6rem;
   padding-left: 4rem;
@@ -611,11 +674,11 @@ body {
   color: #f0f0f0;
   transition: 0.3s all;
 }
-.contact-data__phone {
+.section-contact .contact-wrapper .contact-data__phone {
   margin-bottom: 4rem;
   position: relative;
 }
-.contact-data__phone--heading {
+.section-contact .contact-wrapper .contact-data__phone--heading {
   display: block;
   width: 80%;
   font-size: 2.5rem;
@@ -623,14 +686,14 @@ body {
   color: #8a8a8a;
   border-bottom: 1px solid #8a8a8a;
 }
-.contact-data__phone .fa-phone-square {
+.section-contact .contact-wrapper .contact-data__phone .fa-phone-square {
   position: absolute;
   top: 50px;
   left: 10px;
   font-size: 1.4rem;
   color: #8a8a8a;
 }
-.contact-data__phone--content {
+.section-contact .contact-wrapper .contact-data__phone--content {
   display: block;
   font-size: 1.6rem;
   padding-left: 4rem;
@@ -640,14 +703,14 @@ body {
   position: relative;
   overflow: hidden;
 }
-.contact-data__phone--content:hover {
+.section-contact .contact-wrapper .contact-data__phone--content:hover {
   color: #5485FF;
 }
-.contact-data__mail {
+.section-contact .contact-wrapper .contact-data__mail {
   margin-bottom: 8rem;
   position: relative;
 }
-.contact-data__mail--heading {
+.section-contact .contact-wrapper .contact-data__mail--heading {
   display: block;
   width: 80%;
   font-size: 2.5rem;
@@ -655,14 +718,14 @@ body {
   color: #8a8a8a;
   border-bottom: 1px solid #8a8a8a;
 }
-.contact-data__mail .fa-envelope {
+.section-contact .contact-wrapper .contact-data__mail .fa-envelope {
   position: absolute;
   top: 50px;
   left: 10px;
   font-size: 1.4rem;
   color: #8a8a8a;
 }
-.contact-data__mail--content {
+.section-contact .contact-wrapper .contact-data__mail--content {
   display: block;
   font-size: 1.6rem;
   padding-left: 4rem;
@@ -670,43 +733,61 @@ body {
   color: #f0f0f0;
   transition: 0.3s all;
 }
-.contact-data__mail--content:hover {
+.section-contact .contact-wrapper .contact-data__mail--content:hover {
   color: #5485FF;
 }
-
-.map-box {
+.section-contact .contact-wrapper .map-box {
   position: relative;
   z-index: 2;
+  width: 50%;
+}
+@media screen and (max-width: 756px) {
+  .section-contact .contact-wrapper .map-box {
+    width: 100%;
+  }
 }
 
 .footer {
   width: 100%;
-  max-width: 144rem;
+  max-width: 1920px;
   height: 15rem;
-  line-height: 25rem;
   background-color: rgb(28, 29, 31);
   padding: 0 40px;
   margin: 0 auto;
 }
-.footer .brand-box {
+.footer .footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+@media screen and (max-width: 756px) {
+  .footer .footer-wrapper {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer .footer-wrapper .brand-box {
   text-align: left;
 }
-.footer .brand-box [class*=footer-] {
+.footer .footer-wrapper .brand-box [class*=footer-] {
   font-size: 1.4rem;
   font-weight: 400;
   color: #f0f0f0;
 }
-.footer .brand-box [class*=footer-]:not(:last-child) {
+.footer .footer-wrapper .brand-box [class*=footer-]:not(:last-child) {
   margin-right: 0.3rem;
 }
-.footer .brand-box .footer-brand {
+.footer .footer-wrapper .brand-box .footer-brand {
   font-family: "Londrina Shadow", "Big Shoulders Stencil Text", "Asset", handwriting;
   letter-spacing: 1px;
 }
-.footer .slogan-box {
+.footer .footer-wrapper .slogan-box {
   text-align: right;
 }
-.footer .slogan-box .slogan {
+.footer .footer-wrapper .slogan-box .slogan {
   font-size: 1.6rem;
   font-weight: 400;
   color: #f0f0f0;
@@ -715,7 +796,7 @@ body {
 
 .header-gallery {
   width: 100%;
-  max-width: 144rem;
+  max-width: 1920px;
   height: 10rem;
   margin: 0 auto;
 }
@@ -815,7 +896,7 @@ body {
 
 .section-gallery {
   width: 100%;
-  max-width: 144rem;
+  max-width: 1920px;
   background-color: rgb(28, 29, 31);
   padding-top: 13rem;
   position: relative;
@@ -829,7 +910,7 @@ body {
   font-weight: 900;
   color: rgb(51, 52, 54);
   opacity: 0.5;
-  z-index: 2;
+  z-index: 0;
 }
 @media screen and (max-width: 1024px) {
   .section-gallery .title-big {
@@ -849,101 +930,119 @@ body {
   }
 }
 
-.section-gallery .row {
-  position: relative;
-  z-index: 3;
+.section-gallery .gallery-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  padding: 0 40px;
+  margin-top: 20px;
 }
-.section-gallery .row .picture-1 {
+@media screen and (max-width: 1024px) {
+  .section-gallery .gallery-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 756px) {
+  .section-gallery .gallery-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .section-gallery .gallery-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.section-gallery .gallery-wrapper .picture-1 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-100.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-2 {
+.section-gallery .gallery-wrapper .picture-2 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-86.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-3 {
+.section-gallery .gallery-wrapper .picture-3 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-83.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-4 {
+.section-gallery .gallery-wrapper .picture-4 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-93.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-5 {
+.section-gallery .gallery-wrapper .picture-5 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-103.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-6 {
+.section-gallery .gallery-wrapper .picture-6 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-109.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-7 {
+.section-gallery .gallery-wrapper .picture-7 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-117.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-8 {
+.section-gallery .gallery-wrapper .picture-8 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-124.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-9 {
+.section-gallery .gallery-wrapper .picture-9 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-1.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-10 {
+.section-gallery .gallery-wrapper .picture-10 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-6.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-11 {
+.section-gallery .gallery-wrapper .picture-11 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-16.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-12 {
+.section-gallery .gallery-wrapper .picture-12 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-20.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-13 {
+.section-gallery .gallery-wrapper .picture-13 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-22.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-14 {
+.section-gallery .gallery-wrapper .picture-14 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-25.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-15 {
+.section-gallery .gallery-wrapper .picture-15 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-40.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-16 {
+.section-gallery .gallery-wrapper .picture-16 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-46.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-17 {
+.section-gallery .gallery-wrapper .picture-17 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-54.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-18 {
+.section-gallery .gallery-wrapper .picture-18 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-58.jpg);
   background-position: center;
   background-size: cover;
 }
-.section-gallery .row .picture-19 {
+.section-gallery .gallery-wrapper .picture-19 {
   background-image: url(../img/schody-Markodrew/schody-drewniane-Markodrew-66.jpg);
   background-position: center;
   background-size: cover;
