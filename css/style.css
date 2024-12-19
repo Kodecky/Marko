@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 70%;
 }
 
 body {
@@ -112,6 +112,11 @@ body {
     left: 2%;
     top: -1rem;
     white-space: nowrap;
+  }
+}
+@media screen and (max-width: 500px) {
+  .heading-box .title-big, .section-offer .text-box .title-big, .section-about .text-box .title-big {
+    left: 0;
   }
 }
 
@@ -234,6 +239,7 @@ body {
 .go-up-btn.show {
   opacity: 1;
   pointer-events: all;
+  z-index: 10;
 }
 .go-up-btn:hover {
   background-color: #e67e22;
@@ -387,26 +393,42 @@ body {
 .header .navigation {
   height: 10rem;
   width: 100%;
-  background-image: transparent;
-  line-height: 10rem;
-  position: absolute;
+  background-color: rgb(28, 29, 31);
+  position: fixed;
   z-index: 3;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
-.header .navigation__nav {
-  display: inline-block;
-}
-.header .navigation__nav ul {
+.header .navigation ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.header .navigation__nav ul li {
-  float: left;
+@media screen and (max-width: 700px) {
+  .header .navigation ul {
+    display: none;
+    flex-direction: column;
+    margin-top: 112px;
+    height: max-content;
+    width: 100%;
+    background-color: rgb(28, 29, 31);
+  }
+  .header .navigation ul.active {
+    display: flex;
+  }
+  .header .navigation ul li {
+    margin: 2rem 0;
+  }
+}
+.header .navigation ul li {
   display: block;
 }
-.header .navigation__nav ul li a {
+.header .navigation ul li a {
   display: inline-block;
   font-size: 1.8rem;
-  padding: 0 4rem;
+  margin: 0 4rem;
   letter-spacing: 0.3px;
   text-align: center;
   text-decoration: none;
@@ -415,19 +437,77 @@ body {
   position: relative;
   overflow: hidden;
 }
-.header .navigation__nav ul li a:hover span::after {
-  left: 0;
+@media screen and (min-width: 701px) {
+  .header .navigation ul li a:hover span::after {
+    left: 0;
+  }
 }
-.header .navigation__nav ul li a span::after {
+.header .navigation ul li a span::after {
   content: "";
   display: inline-block;
   width: 100%;
   height: 0.1rem;
   background-color: #f0f0f0;
   position: absolute;
-  bottom: 3rem;
+  bottom: 0;
   left: -100%;
   transition: 0.3s all;
+}
+.header .navigation .menu-toggle {
+  cursor: pointer;
+  width: 2.3rem;
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 701px) {
+  .header .navigation .menu-toggle {
+    display: none;
+  }
+}
+.header .navigation .menu-toggle .burger {
+  height: 1.5rem;
+  position: relative;
+}
+.header .navigation .menu-toggle .burger .line {
+  width: 2.3rem;
+  height: 2px;
+  background-color: #f0f0f0;
+  position: absolute;
+  transition: all 200ms;
+}
+.header .navigation .menu-toggle .burger .line:nth-child(1) {
+  top: 0;
+}
+.header .navigation .menu-toggle .burger .line:nth-child(2) {
+  top: calc(50% - 1px);
+}
+.header .navigation .menu-toggle .burger .line:nth-child(3) {
+  top: calc(100% - 2px);
+}
+.header .navigation .menu-toggle[data-open=true] .burger .line {
+  transition: all 200ms;
+}
+.header .navigation .menu-toggle[data-open=true] .burger .line:nth-child(1) {
+  top: calc(50% - 1px);
+  transform: rotate(45deg);
+}
+.header .navigation .menu-toggle[data-open=true] .burger .line:nth-child(2) {
+  opacity: 0;
+}
+.header .navigation .menu-toggle[data-open=true] .burger .line:nth-child(3) {
+  top: calc(50% - 1px);
+  transform: rotate(-45deg);
+}
+.header .navigation .menu-toggle .burger .line {
+  transition: top 0.2s 0.2s, transform 0.2s, opacity 0.2s;
+}
+.header .navigation .menu-toggle[data-open=true] .burger .line {
+  transition: top 0.2s, transform 0.2s 0.2s, opacity 0.2s 0.15s;
+}
+.header .navigation .menu-toggle[data-open=true] .burger .line:nth-child(2) {
+  opacity: 0;
 }
 .header .hero {
   width: 100%;
@@ -573,6 +653,11 @@ body {
     white-space: nowrap;
   }
 }
+@media screen and (max-width: 500px) {
+  .section-offer .heading-box .title-big, .section-offer .text-box .title-big {
+    left: 0;
+  }
+}
 .section-offer .heading-box .show-title-big, .section-offer .text-box .show-title-big {
   transform: scale(1);
   opacity: 0.5;
@@ -612,6 +697,11 @@ body {
     left: 2%;
     top: -1rem;
     white-space: nowrap;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-contact .heading-box .title-big, .section-contact .section-about .text-box .title-big, .section-about .section-contact .text-box .title-big, .section-contact .section-offer .text-box .title-big, .section-offer .section-contact .text-box .title-big {
+    left: 0;
   }
 }
 .section-contact .heading-box .show-title-big, .section-contact .section-about .text-box .show-title-big, .section-about .section-contact .text-box .show-title-big, .section-contact .section-offer .text-box .show-title-big, .section-offer .section-contact .text-box .show-title-big {
@@ -800,13 +890,15 @@ body {
   height: 10rem;
   margin: 0 auto;
 }
-.header-gallery .navigation {
+.header-gallery .navigation-wrapper {
   height: 10rem;
   width: 100%;
   background-color: rgb(28, 29, 31);
-  line-height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header-gallery .navigation__brand {
+.header-gallery .navigation-wrapper .navigation-brand {
   display: block;
   float: left;
   font-family: "Londrina Shadow", "Big Shoulders Stencil Text", "Asset", handwriting;
@@ -821,21 +913,21 @@ body {
   position: relative;
   z-index: 3;
 }
-.header-gallery .navigation__nav {
+.header-gallery .navigation-wrapper .navigation {
   float: right;
   margin-right: 5rem;
 }
-.header-gallery .navigation__nav ul {
+.header-gallery .navigation-wrapper .navigation ul {
   list-style-type: none;
 }
-.header-gallery .navigation__nav ul li {
+.header-gallery .navigation-wrapper .navigation ul li {
   float: left;
   display: block;
 }
-.header-gallery .navigation__nav ul li a {
+.header-gallery .navigation-wrapper .navigation ul li a {
   display: inline-block;
   font-size: 1.8rem;
-  padding: 0 4rem;
+  margin: 0 4rem;
   letter-spacing: 0.3px;
   text-align: center;
   text-decoration: none;
@@ -844,17 +936,17 @@ body {
   position: relative;
   overflow: hidden;
 }
-.header-gallery .navigation__nav ul li a:hover span::after {
+.header-gallery .navigation-wrapper .navigation ul li a:hover span::after {
   left: 0;
 }
-.header-gallery .navigation__nav ul li a span::after {
+.header-gallery .navigation-wrapper .navigation ul li a span::after {
   content: "";
   display: inline-block;
   width: 100%;
   height: 0.1rem;
   background-color: #f0f0f0;
   position: absolute;
-  bottom: 3rem;
+  bottom: 0;
   left: -100%;
   transition: 0.3s all;
 }

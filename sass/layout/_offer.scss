@@ -26,6 +26,10 @@
         top: -1rem;
         white-space: nowrap;
       }
+      @media screen and (max-width: 500px) {
+        left: 0;
+        
+      }
     }
 
     .show-title-big{

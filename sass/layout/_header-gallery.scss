@@ -4,14 +4,16 @@
   height: 10rem;
   margin: 0 auto;
 
-  .navigation{
+  .navigation-wrapper{
     height: 10rem;
     width: 100%;
-    // background-image: $color-background;
     background-color: $color-black;
-    line-height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    &__brand{
+
+    .navigation-brand{
       display: block;
       float: left;
       font-family: $font-brand;
@@ -28,7 +30,7 @@
       z-index: 3;
     }
 
-    &__nav{
+    .navigation{
       float: right;
       margin-right: 5rem;
       // height: 100%;
@@ -48,7 +50,7 @@
           a{
             display: inline-block;
             font-size: 1.8rem;
-            padding: 0 4rem;
+            margin: 0 4rem;
             letter-spacing: .3px;
             text-align: center;
             text-decoration: none;
